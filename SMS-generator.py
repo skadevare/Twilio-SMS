@@ -20,7 +20,7 @@ SMS Contents:
 """ % (smsTo,smsSender,smsContents))
 
 CurlCommand = """curl 'https://api.twilio.com/2010-04-01/Accounts/AC***************************/Messages.json' -X POST \
---data-urlencode 'To=+47%s' \
+--data-urlencode 'To=%s' \
 --data-urlencode 'Body=%s' \
 --data-urlencode 'From=%s' \
 --data-urlencode 'MessagingServiceSid=********************' \
